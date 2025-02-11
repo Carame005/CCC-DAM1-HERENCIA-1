@@ -1,14 +1,4 @@
-class Circulo (color: Color, var diametro : Double) : Figura(color) {
-    var area : Double = 0.0
-    var perimetro : Double = 0.0
-
-    override fun area(): Double {
-        area = Math.PI * ((diametro/2)*(diametro/2))
-        return area
-    }
-
-    override fun perimetro(): Double {
-        perimetro = Math.PI * diametro
-        return perimetro
-    }
+class Circulo(nombre : String,color: Color, private val radio: Double) : Figura(nombre,color) {
+    override fun area(): Double = Math.PI * radio * radio
+    override fun perimetro(): Double = Math.PI * radio
 }

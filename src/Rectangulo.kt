@@ -1,14 +1,4 @@
-class Rectangulo (color: Color, var base : Double, var altura : Double) : Figura(color) {
-    var area : Double = 0.0
-    var perimetro : Double = 0.0
-
-    override fun area(): Double {
-        area = base*altura
-        return area
-    }
-
-    override fun perimetro(): Double {
-        perimetro = 2*base + 2*altura
-        return perimetro
-    }
+class Rectangulo(nombre : String ,color: Color, private val base: Double, private val altura: Double) : Figura(nombre,color) {
+    override fun area(): Double = base * altura
+    override fun perimetro(): Double = 2 * (base + altura)
 }
