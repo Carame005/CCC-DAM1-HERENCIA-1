@@ -1,5 +1,5 @@
 abstract class Figura( protected val color: Color) {
-    abstract fun area() : Int
+    abstract fun area() : Double
 
-    abstract fun perimetro() : Int
+    abstract fun perimetro() : Double
 }
